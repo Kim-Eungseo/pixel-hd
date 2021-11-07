@@ -1,0 +1,9 @@
+.MainPage{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+} 
+/* 
+.additional{
+    background-color: aqua;
+} */
