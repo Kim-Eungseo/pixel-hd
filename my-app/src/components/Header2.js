@@ -1,4 +1,6 @@
 import * as React from 'react';
+import { Link as RouterLink } from "react-router-dom";
+
 import { styled, alpha } from '@mui/material/styles';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -168,7 +170,7 @@ export default function PrimarySearchAppBar() {
             sx={{ mr: 2 }}
           >
           </IconButton> */}
-          <Link href="#" color="inherit" underline="none"
+          <Link href="#" color="inherit" underline="none" component={RouterLink} to="/"
             variant="h5"
             noWrap
             sx={{ mr: 1, 
@@ -176,7 +178,7 @@ export default function PrimarySearchAppBar() {
           >
             <b>P!XEL</b>
           </Link>
-          <Link href="#" color="inherit" underline="hover"
+          <Link href="#" color="inherit" underline="hover" component={RouterLink} to="/explore"
             variant="h6"
             noWrap
             sx={{ mr: 1, display: { xs: 'none', sm: 'block' } }}

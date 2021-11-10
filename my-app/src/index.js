@@ -1,9 +1,6 @@
 import React from 'react';
-import { render } from "react-dom";
 import ReactDOM from 'react-dom';
-// import Root from './Root';
 import './index.css';
-// import App from './App'
 import Root from './root.js';
 
 

@@ -14,7 +14,6 @@ const Root = () => {
             <Routes>
                 <Route path="/" element={<MainPage />} />
                 <Route path="explore" element={<ExplorePage />} />
-                {/* <Route path="invoices" element={<Invoic />} /> */}
             </Routes>
         </BrowserRouter>
 
