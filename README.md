@@ -1,3 +1,3 @@
 # pixel
-We, Higher Definition, designing a new Social Networking Service based on blogging.
+We, <a href="https://www.instagram.com/higher__definition/">Higher Definition</a>, designing a new Social Networking Service based on blogging.
 We are planning to open beta version at late November.
