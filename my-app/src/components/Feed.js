@@ -1,5 +1,6 @@
 import React from "react";
 import FeedContent from "./FeedContent";
+import Divider from '@mui/material/Divider';
 import "./Feed.css";
 
 export default function Feed(){
@@ -8,7 +9,9 @@ export default function Feed(){
             {/* This is a Feed Section<br></br>This is a Feed Section<br></br>This is a Feed Section<br></br>This is a Feed Section<br></br>This is a Feed Section<br></br>This is a Feed Section<br></br>This is a Feed Section<br></br>This is a Feed Section<br></br>This is a Feed Section<br></br>This is a Feed Section<br></br>This is a Feed Section<br></br>This is a Feed Section<br></br>This is a Feed Section<br></br>This is a Feed Section<br></br>This is a Feed Section<br></br>This is a Feed Section<br></br>This is a Feed Section<br></br> */}
            
             <FeedContent />
+            <Divider />
             <FeedContent />
+            <Divider />
             <FeedContent />
 
             
