@@ -145,7 +145,7 @@ export default function RecipeReviewCard() {
       </CardActions>
       <br/>
 
-      <Divider />
+      {/* <Divider /> */}
 
     </Card>
 
