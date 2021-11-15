@@ -1,22 +1,17 @@
 .tagBox{
-    /* flex: 0.5; */
+    margin-top: 0px !important;
     min-width: 250px;
     max-width: 250px;
     display: flex;
-    /* height: 100%; */
     padding: 20px 0;
-    /* border: 1px solid blue; */
     position: fixed;
     flex-direction: column;
-    margin-top: 0px;
-    margin-left: 0px;
     background-color: #F7F9F9;
     border-radius: 16px;
-    /* border: 1px solid blue */
 }
 
-.tagsContainer{
-    padding: 0 10px;
+.tagContainerBox{
+    /* margin-top: -80px; */
 }
 
 

@@ -70,7 +70,7 @@ const Search = styled('div')(({ theme }) => ({
 
 export default function Tags(){
     return(
-        // <div className="Trending">
+        <div className="tagContainerBox">
             <Box className="tagBox">
                 <h3 className="title">Tags</h3>
                 <TagContent/>
@@ -108,6 +108,6 @@ export default function Tags(){
                     />
                 </Search>
             </Box>
-        // </div>
+        </div>
     );
 }

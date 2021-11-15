@@ -1,28 +1,27 @@
 import * as React from 'react';
 
-import ExploreGrid from "../components/ExploreGrid";
-import Tags from "../components/Tags";
+import Navs from "../components/CommunityNav";
+import CommunityFeed from "../components/CommunityFeed";
 
 import Header from "../components/Header2";
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
-import "./explorePage.css";
+import "./communityPage.css";
 
 
   
 
-export default function ExplorePage(props){
+export default function CommunityPage(props){
     return(
         <div>   
            <Header />
         <div>
-   
-        <Container maxWidth="xl" className="container">
+        <Container maxWidth="lg" className="container">
             <div className="trendingContainer">
-                        <Tags />
+                        <Navs />
                     </div>
                 <div className="feedContainer">
-                    <ExploreGrid/>
+                        <CommunityFeed />
                 </div>
         </Container>
            

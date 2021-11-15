@@ -160,7 +160,9 @@ export default function PrimarySearchAppBar() {
 
   return (
     <Box>
-      <AppBar position="fixed" color="default" elevation="0" sx={{borderBottom: '1px solid #e0e0e0', backgroundColor: 'white'}}>
+      <AppBar
+       position="fixed"
+       color="default" elevation="0" sx={{borderBottom: '1px solid #e0e0e0', backgroundColor: 'white'}}>
         <Toolbar>
           {/* <IconButton
             size="large"
@@ -185,7 +187,7 @@ export default function PrimarySearchAppBar() {
           >
             Explore
           </Link>
-          <Link href="#" color="inherit" underline="hover"
+          <Link href="#" color="inherit" underline="hover" component={RouterLink} to="/community"
             variant="h6"
             noWrap
             sx={{ mr: 1, display: { xs: 'none', sm: 'block' } }}

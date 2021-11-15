@@ -5,7 +5,7 @@
     margin-left: 270px;
     min-width: fit-content;
     white-space: normal;
-    position: relative;
+    /* position: relative; */
     display: flex;
     height: 100%;
     /* max-width: 592px; */
@@ -17,6 +17,6 @@
 }
 
 .Grid{
-    elevation: 0;
+    /* elevation: 10; */
     border: 1px solid grey;
 }

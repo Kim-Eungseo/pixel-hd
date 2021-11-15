@@ -49,8 +49,8 @@ export default function GridContent() {
 
       <CardContent sx={{paddingTop: 0, mt: -1}}>
         {/* <Stack direction="row" spacing={1}> */}
-        <Chip label="primary" color="secondary" size="small" onClick={handleClick} sx={{margin: '2px'}}/>
-        <Chip label="success" color="success" size="small" onClick={handleClick} sx={{margin: '2px'}}/>
+        <Chip label="생각" color="secondary" size="small" onClick={handleClick} sx={{margin: '2px'}}/>
+        <Chip label="리뷰" color="success" size="small" onClick={handleClick} sx={{margin: '2px'}}/>
       {/* </Stack> */}
       </CardContent>
 
