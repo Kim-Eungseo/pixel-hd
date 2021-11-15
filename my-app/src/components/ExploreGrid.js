@@ -16,43 +16,45 @@ const Item = styled(Paper)(({ theme }) => ({
     color: theme.palette.text.secondary,
   }));
 
-export default function ExploreGrid(){
+export default function ExploreGrid(props){
+    const { ml, lg, md, sm } = props;
+
     return(
-        <div className="GridBox">
-            
-            <Box sx={{ flexGrow: 1 }} >
+            <Box className="GridBox" sx={{ml: (ml)}}>
             <Grid container spacing={2} elevation={1} >
-                <Grid item lg={3} md={4} sm={6}>
+
+                <Grid item lg={(lg)} md={(md)} sm={(sm)}>
                     <GridContent />
                 </Grid>
-                <Grid item lg={3} md={4} sm={6}>
+
+                <Grid item lg={(lg)} md={(md)} sm={(sm)}>
                     <GridContent />
                 </Grid>
-                <Grid item lg={3} md={4} sm={6}>
+                <Grid item lg={(lg)} md={(md)} sm={(sm)}>
                     <GridContent />
                 </Grid>
-                <Grid item lg={3} md={4} sm={6}>
+                <Grid item lg={(lg)} md={(md)} sm={(sm)}>
                     <GridContent />
                 </Grid>
-                <Grid item lg={3} md={4} sm={6}>
+                <Grid item lg={(lg)} md={(md)} sm={(sm)}>
                     <GridContent />
                 </Grid>
-                <Grid item lg={3} md={4} sm={6}>
+                <Grid item lg={(lg)} md={(md)} sm={(sm)}>
                     <GridContent />
                 </Grid>
-                <Grid item lg={3} md={4} sm={6}>
+                <Grid item lg={(lg)} md={(md)} sm={(sm)}>
                     <GridContent />
                 </Grid>
-                <Grid item lg={3} md={4} sm={6}>
+                <Grid item lg={(lg)} md={(md)} sm={(sm)}>
                     <GridContent />
                 </Grid>
-                <Grid item lg={3} md={4} sm={6}>
+                <Grid item lg={(lg)} md={(md)} sm={(sm)}>
                     <GridContent />
                 </Grid>
                 
             </Grid>
-            </Box>
             
-        </div>
+            </Box>
+        
     );
 }

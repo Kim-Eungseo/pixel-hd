@@ -18,11 +18,11 @@ export default function ExplorePage(props){
         <div>
    
         <Container maxWidth="xl" className="container">
-            <div className="trendingContainer">
+                 <div className="trendingContainer">
                         <Tags />
                     </div>
                 <div className="feedContainer">
-                    <ExploreGrid/>
+                    <ExploreGrid ml={35} lg={3} md={4} sm={6} />
                 </div>
         </Container>
            

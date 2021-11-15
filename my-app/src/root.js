@@ -7,6 +7,7 @@ import {
 import MainPage from "./pages/mainPage";
 import ExplorePage from "./pages/explorePage";
 import CommunityPage from "./pages/communityPage";
+import UserPage from "./pages/userPage";
 
 
 const Root = () => {
@@ -16,6 +17,7 @@ const Root = () => {
                 <Route path="/" element={<MainPage />} />
                 <Route path="explore" element={<ExplorePage />} />
                 <Route path="community" element={<CommunityPage />} />
+                <Route path="u/carter" element={<UserPage />} />
             </Routes>
         </BrowserRouter>
 
