@@ -14,7 +14,7 @@ import CarterProfile from "../../imgExample/carterProfile.jpg";
 
 export default function UserBio() {
   return (
-    <Card sx={{ maxWidth: 200, borderRadius: 0, display: { md: 'none', lg: 'block'} }} elevation={0}>
+    <Card sx={{ maxWidth: 200, borderRadius: 0, display: { md: 'none',  sm: 'none', xs: 'none', lg: 'block'} }} elevation={0}>
       <CardMedia
         component="img"
         alt="green iguana"
