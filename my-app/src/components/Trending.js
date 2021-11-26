@@ -9,7 +9,7 @@ export default function Trending(){
         // <div className="Trending">
             <Box sx={{ display: {
                 // sm: 'none',
-               } }} className="Trending">
+                md: 'block' } }} className="Trending">
                 <h3 className="title">최근 덧글</h3>
                 <TrendingComponent/>
                 <Link href="#" color="#349BF0" underline="none"
