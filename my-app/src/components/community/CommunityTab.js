@@ -69,7 +69,7 @@ export default function UserTab() {
       <Typography variant="h5" component="div" sx={{ml: 1, mt: 3, mb: 0, fontSize: 20}}>
         21 Posts
       </Typography> 
-      <ExploreGrid ml={0} md={4} sm={6} xs={12}/>
+      <ExploreGrid ml={0} md={4} sm={6} />
       </TabPanel>
       <TabPanel value={value} index={2}>
       <Typography variant="h5" component="div" sx={{ml: 1, mt: 3, mb: 0, fontSize: 20}}>

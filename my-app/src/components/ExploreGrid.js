@@ -17,38 +17,61 @@ const Item = styled(Paper)(({ theme }) => ({
   }));
 
 export default function ExploreGrid(props){
-    const { ml, lg, md, sm } = props;
+    const { ml, md, sm, xs } = props;
 
     return(
             <Box className="GridBox" sx={{ml: (ml)}}>
             <Grid container spacing={2} elevation={1} >
 
-                <Grid item lg={(lg)} md={(md)} sm={(sm)}>
+                <Grid item md={(md)} sm={(sm)} xs={(xs)}>
                     <GridContent />
                 </Grid>
 
-                <Grid item lg={(lg)} md={(md)} sm={(sm)}>
+                <Grid item md={(md)} sm={(sm)} xs={(xs)}>
                     <GridContent />
                 </Grid>
-                <Grid item lg={(lg)} md={(md)} sm={(sm)}>
+                
+                <Grid item md={(md)} sm={(sm)} xs={(xs)}>
                     <GridContent />
                 </Grid>
-                <Grid item lg={(lg)} md={(md)} sm={(sm)}>
+                
+                <Grid item md={(md)} sm={(sm)} xs={(xs)}>
                     <GridContent />
                 </Grid>
-                <Grid item lg={(lg)} md={(md)} sm={(sm)}>
+
+                <Grid item md={(md)} sm={(sm)} xs={(xs)}>
                     <GridContent />
                 </Grid>
-                <Grid item lg={(lg)} md={(md)} sm={(sm)}>
+
+                <Grid item md={(md)} sm={(sm)} xs={(xs)}>
                     <GridContent />
                 </Grid>
-                <Grid item lg={(lg)} md={(md)} sm={(sm)}>
+
+                <Grid item md={(md)} sm={(sm)} xs={(xs)}>
                     <GridContent />
                 </Grid>
-                <Grid item lg={(lg)} md={(md)} sm={(sm)}>
+
+                <Grid item md={(md)} sm={(sm)} xs={(xs)}>
                     <GridContent />
                 </Grid>
-                <Grid item lg={(lg)} md={(md)} sm={(sm)}>
+
+                <Grid item md={(md)} sm={(sm)} xs={(xs)}>
+                    <GridContent />
+                </Grid>
+
+                <Grid item md={(md)} sm={(sm)} xs={(xs)}>
+                    <GridContent />
+                </Grid>
+
+                <Grid item md={(md)} sm={(sm)} xs={(xs)}>
+                    <GridContent />
+                </Grid>
+
+                <Grid item md={(md)} sm={(sm)} xs={(xs)}>
+                    <GridContent />
+                </Grid>
+
+                <Grid item md={(md)} sm={(sm)} xs={(xs)}>
                     <GridContent />
                 </Grid>
                 

@@ -10,6 +10,9 @@ import CarterCover from "../imgExample/carterCover.png"
 import UserBio from "../components/user/userBio";
 import UserTab from "../components/user/userTab";
 
+// import Paper from '@mui/material/Paper';
+import BottomNav from "../components/BottomNav";
+
 import "./userPage.css";
 
 export default function UserPage(){
@@ -45,6 +48,10 @@ export default function UserPage(){
                     <Trending />
                 </div> */}
         </Container>
+
+        <Paper sx={{ position: 'fixed', bottom: 0, left: 0, right: 0 }} elevation={3} className="bottom">
+        <BottomNav />
+        </Paper>
            
 
         <script src="http://code.jquery.com/jquery-latest.min.js"></script>

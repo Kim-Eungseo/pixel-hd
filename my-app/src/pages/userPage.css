@@ -20,3 +20,15 @@
     margin-top: 100px;
     color: red;
 }
+
+    /* Desktop */
+    .bottom{
+        visibility: collapse;
+    }
+    
+    @media screen and (max-width: 599px) {
+        /* mobile */
+        .bottom{
+            visibility: visible;
+        }
+    }
