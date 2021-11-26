@@ -1,12 +1,15 @@
 .Trending{
     /* flex: 0.5; */
-    min-width: 300px;
+
+    /* min-width: 300px;
     max-width: 350px;
+    margin-top: 80px;
+    margin-left: 616px; */
+
     padding: 20px 0;
     /* border: 1px solid blue; */
     position: relative;
-    margin-top: 80px;
-    margin-left: 616px;
+
     background-color: #F7F9F9;
     border-radius: 16px;
     

@@ -10,17 +10,22 @@ import BottomNav from "../components/BottomNav";
 
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
-import "./mainPage.css";
+
+import MainMobileHeader from '../components/main/MainMobileHeader';
+import "./Pages.css";
 
 
   
 
 export default function MainPage(props){
     return(
-        <div>   
-           <Header />
         <div>
-   
+        <div className="MainDesktopHeader">   
+           <Header />
+        </div>
+        <div className="MainMobileHeader">
+            <MainMobileHeader />
+        </div>
         <Container maxWidth="md" className="container">
                 <div className="feedContainer">
                     <Feed/>
@@ -39,7 +44,7 @@ export default function MainPage(props){
         <script>
             
         </script>
-        </div>
+        {/* </div> */}
         </div>
     );
 }

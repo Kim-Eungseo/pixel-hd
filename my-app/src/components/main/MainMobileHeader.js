@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Link as RouterLink } from "react-router-dom";
 
-import { styled, alpha } from '@mui/material/styles';
+
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -9,14 +9,59 @@ import IconButton from '@mui/material/IconButton';
 
 import Link from '@mui/material/Link';
 import Chip from '@mui/material/Chip';
+import FlareIcon from '@mui/icons-material/Flare';
 
 import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
 
+import Fade from '@mui/material/Fade';
 
+
+// For the Dialog
+import PropTypes from 'prop-types';
+import Dialog from '@mui/material/Dialog';
+
+import Trending from "../Trending";
+
+
+function SimpleDialog(props) {
+  const { onClose, selectedValue, open } = props;
+
+  const handleClose = () => {
+    onClose(selectedValue);
+  };
+
+  const handleListItemClick = (value) => {
+    onClose(value);
+  };
+
+  return (
+    <Dialog onClose={handleClose} open={open}>
+       <Trending />
+    </Dialog>
+  );
+}
+
+SimpleDialog.propTypes = {
+  onClose: PropTypes.func.isRequired,
+  open: PropTypes.bool.isRequired,
+  selectedValue: PropTypes.string.isRequired,
+};
 
 export default function PrimarySearchAppBar() {
 
   const preventDefault = (event) => event.preventDefault();
+
+
+  const [open, setOpen] = React.useState(false);
+
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = (value) => {
+    setOpen(false);
+  };
+
 
   return (
     <div>
@@ -32,7 +77,7 @@ export default function PrimarySearchAppBar() {
             sx={{ mr: 1, 
             }}
           >
-            <b>P!XEL</b>
+            <b>Home</b>
           </Link>
           <Link href="#" color="inherit" underline="hover" component={RouterLink} to="/explore"
             variant="h6"
@@ -57,9 +102,29 @@ export default function PrimarySearchAppBar() {
              <Chip label="로그인" variant="outlined" onClick sx={{mr: 1}}/>
 
           </Box>
-
+          {/* Flare Icon */}
           {/* Notifications Icon Box */}
           <Box sx={{ display: { xs: 'flex', sm: 'none' } }}>
+
+          <Fade in>
+            <Chip label="최근 덧글"
+            //  variant="outlined"
+            onClick={handleClickOpen}
+            sx={{mt: 1}}/>
+
+          </Fade>
+            
+
+          {/* <IconButton
+              size="large"
+              aria-label="show more"
+              aria-haspopup="true"
+              onClick={preventDefault}
+              color="inherit"
+            >
+              <FlareIcon sx={{opacity: 0.7}} />
+            </IconButton> */}
+
             <IconButton
               size="large"
               aria-label="show more"
@@ -75,6 +140,10 @@ export default function PrimarySearchAppBar() {
 
     </Box>
     
+    <SimpleDialog
+        open={open}
+        onClose={handleClose}
+      />
 
     </div>
   );

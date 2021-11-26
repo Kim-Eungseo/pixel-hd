@@ -8,6 +8,15 @@
     .ExploreMobileHeader{
         visibility: collapse;
     }
+    .MainMobileHeader{
+        visibility: collapse;
+    }
+    .trendingContainer{
+        min-width: 300px;
+        max-width: 350px;
+        margin-top: 80px;
+        margin-left: 616px;
+    }
 
     .bottomNavClass .active{
         color:#1976d2;
@@ -17,7 +26,14 @@
       /* mobile */
     @media screen and (max-width: 599px) {
         /* CSS가 Global 하게 적용되는 것 같아서(오류인지는 모르겠음) 여기에 mobile 모두 작성 */
-      
+        /* MainPage */
+        .trendingContainer{
+            visibility: collapse;
+        }
+        .MainMobileHeader{
+            visibility: visible;
+        }
+
         /* ExplorePage */
         .tagContainer{
             visibility: collapse !important;
