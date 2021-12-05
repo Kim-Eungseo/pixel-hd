@@ -15,11 +15,14 @@ jobs:
       - name: Setup node
         uses: actions/setup-node@v2
 
+      - name: Forcing
+        run: yarn init --force
+
       - name: Install dependencies
-        run: npm install
+        run: yarn install
 
       - name: Build static file
-        run: npm run build
+        run: yarn build
 
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
