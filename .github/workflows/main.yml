@@ -19,7 +19,9 @@ jobs:
         run: yarn install
 
       - name: Build static file
-        run: yarn build
+        run: |
+            cd pixel/my-app
+            yarn run build
 
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
