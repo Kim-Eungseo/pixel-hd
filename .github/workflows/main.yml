@@ -20,7 +20,7 @@ jobs:
 
       - name: Build static file
         run: |
-            cd pixel/my-app
+            cd my-app
             yarn run build
 
       - name: Configure AWS Credentials
