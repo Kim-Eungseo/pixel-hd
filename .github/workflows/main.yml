@@ -16,7 +16,9 @@ jobs:
         uses: actions/setup-node@v2
 
       - name: Install dependencies
-        run: yarn install
+        run: |
+            cd my-app
+            yarn install
 
       - name: Build static file
         run: |
