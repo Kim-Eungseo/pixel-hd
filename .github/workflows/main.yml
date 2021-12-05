@@ -15,9 +15,6 @@ jobs:
       - name: Setup node
         uses: actions/setup-node@v2
 
-      - name: Forcing
-        run: yarn init --force
-
       - name: Install dependencies
         run: yarn install
 
